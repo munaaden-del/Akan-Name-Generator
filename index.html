@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akan Name Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Akan Name Generator</h1>
+
+    <p class="description">
+      Akan names come from the Ghanaian culture, where children are named
+      according to the day of the week they were born. Enter your birthdate
+      and select your gender to find out your Akan name.
+    </p>
+<br>
+    <form id="akanForm">
+      <div class="form-group">
+        
+        <br/>
+        <label for="day">Day</label>
+        <input
+          type="number"
+          id="day"
+          name="day"
+          min="1"
+          max="31"
+          placeholder="e.g. 15"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="month">Month</label>
+        <input
+          type="number"
+          id="month"
+          name="month"
+          min="1"
+          max="12"
+          placeholder="e.g. 6"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          min="1900"
+          max="2100"
+          placeholder="e.g. 1998"
+          required
+        />
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Gender</legend>
+        <label>
+          <input type="radio" name="gender" value="male" />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Female
+        </label>
+      </fieldset>
+
+      <button type="submit" class="btn">Get Akan Name</button>
+    </form>
+
+    <section id="result" class="result hidden">
+      <h2>Your Akan Name</h2>
+      <p id="resultText"></p>
+    </section>
+
+    <section class="reference">
+      <h3>Akan Names Reference</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Male Name</th>
+            <th>Female Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sunday</td><td>Kwasi</td><td>Akosua</td></tr>
+          <tr><td>Monday</td><td>Kwadwo</td><td>Adwoa</td></tr>
+          <tr><td>Tuesday</td><td>Kwabena</td><td>Abenaa</td></tr>
+          <tr><td>Wednesday</td><td>Kwaku</td><td>Akua</td></tr>
+          <tr><td>Thursday</td><td>Yaw</td><td>Yaa</td></tr>
+          <tr><td>Friday</td><td>Kofi</td><td>Afua</td></tr>
+          <tr><td>Saturday</td><td>Kwame</td><td>Ama</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
